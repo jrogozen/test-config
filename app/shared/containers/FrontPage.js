@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './FrontPage.scss';
+
 class FrontPage extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +12,7 @@ class FrontPage extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="FrontPage">
                 FrontPage!
 
                 <button
@@ -19,7 +21,7 @@ class FrontPage extends React.Component {
                         Click Me
                 </button>
 
-                <div>
+                <div className="FrontPage-clicks">
                     Total Clicks: {this.state.totalClicks}
                 </div>
             </div>
